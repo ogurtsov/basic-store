@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    {% if category %}
+        <h1>{{ category.name }}</h1>
+    {% endif %}
+
+    {% for item in items %}
+
+        <a href="{% url 'item-page' item.pk %}">
+            <img src="{{ item.image.url }}" alt="" width="200" />
+            <br>
+            {{ item.name }}
+        </a>
+
+    {% endfor %}
+
+{% endblock %}
