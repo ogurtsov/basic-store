@@ -16,10 +16,10 @@
   <body>
 
 
-    <div class="container text-right">
-      <a onclick="document.setLangRu.submit();return false;" href="#">RU</a>
-      <a onclick="document.setLangRo.submit();return false;" href="#">RO</a>
-    </div>
+
+  <a onclick="document.setLangRu.submit();return false;" href="#">RU</a>
+  <a onclick="document.setLangRo.submit();return false;" href="#">RO</a>
+
 
 
     <div class="container">
@@ -27,11 +27,10 @@
             <a href="{% url 'category-page' cat.slug %}">{{ cat.name }}</a>
         {% endfor %}
     </div>
+
     <div class="container">
-
       {% block content %}{% endblock %}
-
-    </div><!-- /.container -->
+    </div>
 
 
     <!-- DO NOT EDIT FORMS BELOW  -->
