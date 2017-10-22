@@ -24,7 +24,7 @@
 
     <div class="container">
         {% for cat in categories %}
-            <a href="{% url 'category-page' cat.slug %}">{{ cat.name }}</a>
+            <a href="{% url 'category-page' cat.slug %}" class="btn btn-warning">{{ cat.name }}</a>
         {% endfor %}
     </div>
 
